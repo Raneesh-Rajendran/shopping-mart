@@ -1,0 +1,23 @@
+<div class="ui menu header">
+  <div class="ui container">
+    <div class="item">
+      <a aria-label="Products">
+        <i class="icon users large blue" aria-hidden="true"></i>
+      </a>
+    </div>
+    <div class="header item">
+      <h1>Product Catalogue</h1>
+    </div>
+    <div class="ui icon input">
+      <input class="prompt" type="text" placeholder="Search products..." [(ngModel)]="searchValue"
+        (ngModelChange)="reloadData(searchValue)" >
+      <i class="search icon"></i>
+    </div>
+    <div class="results"></div>
+  </div>
+</div>
+<div class="ui container">
+  <div class="ui grid">
+    <app-product *ngFor="let product of processedProducts " [product]="product"></app-product>
+  </div>
+</div>

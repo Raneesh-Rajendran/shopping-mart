@@ -1,0 +1,23 @@
+.product-name {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.product-price {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+p {
+    color: #333;
+}
+
+.card-box{
+    height: 30em;
+    width: 40em;
+}
+
+.image{
+    width: 50%;
+}
